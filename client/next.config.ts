@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig: Partial<import("next").NextConfig> = {
+  experimental: {
+    turbopack: false,
+  },
 };
+
 
 export default nextConfig;
